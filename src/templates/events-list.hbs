@@ -1,0 +1,28 @@
+
+
+    {{#each this}}
+    <li class="event-item text-focus-in">
+        
+        <a href="javascript:void(0)" class="event-list-link" data-id="{{id}}">
+            <div class="decorative-frame"></div>
+            <div class="img-frame">
+                <img src="{{url}}"  alt="{{name}}" class="event-img" />
+            </div>
+        </a>
+        <p class="event-description">
+            {{name}}
+        </p>
+        <p class="event-data">
+            {{data}}, {{time}}
+        </p>
+        <p class="event-lokation">
+            <span class="material-icons event-place">
+                place
+            </span>
+            <a class="event-lokation event-lokation--link" target="blanket" href="https://www.google.com/maps/search/?api=1&query={{location}}%2C{{city}}">{{location}}, {{city}}</a>
+        </p>
+          
+    </li>
+    {{/each}}
+
+
